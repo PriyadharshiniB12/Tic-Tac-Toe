@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background-image: url("tic-tac-toe.jpg");
+    background-repeat: no-repeat;
+    background-position: flex;
+  }
+  html {
+    font-size: 16px;
+  }
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+  }
+  .button-option {
+    background: #ffffff;
+    height: 20vmin;
+    width: 20vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: #17f129;
+    box-shadow: 0 0 15px rgba(233, 16, 194, 0.1);
+  }
+  #restart {
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #f01d98;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 0.5em auto 0 auto;
+    display: block;
+  }
+  #newgame {
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #f01d98;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 0.5em auto 0 auto;
+    display: block;
+  }
+  .popup {
+    background: linear-gradient(135deg, #e2ec52, #d161ff);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+  }
+  #new-game {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #f0257a;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: none;
+  }
+  #message {
+    color: #4f4545;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1em;
+  }
+  .popup.hide {
+    display: none;
+  }
